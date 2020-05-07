@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button ondblclick="AlphabetSort()">Sort Alphabetically</button>
+    <button ondblclick="NumericSort()">Sort Numerically</button>
+    <p id="demo"></p>
+</body>
+<script>
+    var points;
+    
+    points =[100, 400, 1, 30, 23, 24, 17, 2, 4, 5, 6];
+    document.getElementById("demo").innerHTML = points; 
+    function AlphabetSort(){
+        points.sort();
+        document.getElementById("demo").innerHTML = points;
+        
+    }
+    function NumericSort(){
+        points.sort(function (a,b){return a-b});// inline function.
+        document.getElementById("demo").innerHTML = points;
+       
+    }
+    
+</script>
+</html>

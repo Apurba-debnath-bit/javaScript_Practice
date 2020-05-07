@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>What can javascript do?</title>
+		<style>
+			#container-1{
+				height:300px;
+				width:400px;
+				float:left;
+				background-color:#DC143C;
+				border:2px dotted black;
+				margin:10px;
+				margin-left:60px;
+				color:white;
+				text-align:center;
+			
+			}
+			#container-2{
+				height:300px;
+				width:400px;
+				background-color:darkBlue;
+				border:2px dotted black;
+				float:left;
+				margin:10px;
+				color:white;
+				text-align:center;
+			
+			}
+			#container-3{
+				height:300px;
+				width:400px;
+				background-color:#DC143C;
+				border:2px dotted black;
+				float:left;
+				margin:10px;
+				color:white;
+				text-align:center;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="container-1">
+			
+			<h1 id="head1">JavaScript Can change: HTML content</h1>
+			<p id="ddd">Any HTML content can be changed using javascript?</p>
+			
+			<button type="button" onclick="document.getElementById('ddd').innerHTML = 'Hello JavaScript'">
+				Click me 
+			</button>
+			
+			<button type="" onclick="document.getElementById('head1').innerHTML= 'Head change already'">
+			change header
+			</button>
+			
+		
+		</div>
+		<div id="container-2">
+			<h2> what can javascript Do?</h2>
+			<p>JavaScript can change HTML attribute's values</p>
+			
+			<p>In this case, javascript can change the value of src attribute of img tag</p>
+			
+			<button type="button" onclick="document.getElementById('myImage').src='image/off.gif'">Trun off</button>
+			
+			<img id="myImage" src="image/off.gif" style="width:90px; height:100px" alt="picture">
+			
+			<button type="button" onclick="document.getElementById('myImage').src='image/on.gif'">Trun on</button>
+			
+		</div>
+		<div id="container-3">
+		<h1>What can javascript do?</h1>
+		<p>javascript can change the style of HTML element.</p>
+		<p id="para-1">The paragraph is here.</p>
+		<button type="button" onclick="document.getElementById('para-1').style.color= 'gray'">Click me</button>
+		<button type="button" onclick="document.getElementById('para-1').style.fontSize ='34px'">Click here</button>
+		<button type="button" onclick="document.getElementById('para-1').style.fontFamily ='Arial'">Click here</button>
+		<button type="button" onclick="document.getElementById('para-1').style.fontFamily ='Arial'">Click to Change</button>
+		<!--
+		Remember here ('id')-> id must be pass as a string
+		and also the value must be passed as a string also.
+		font-family(wrong) ---..(fontFamily, fontSize), camalecase must for style changing of one html element
+		-->
+		</div>
+		
+		
+	
+	</body>
+
+
+
+
+
+</html>

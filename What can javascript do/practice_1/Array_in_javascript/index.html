@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container{
+            height: 500px;
+            width: 700px;
+            background-color: black;
+            color: coral;
+            font-size: 18px;
+            text-align: center;
+            font-family: cursive;
+            margin: 0 auto;
+            padding:10px;
+            margin-top:80px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h2>Array in javascript:</h2>
+        <h2>Array is dynamic in javascript</h2>
+        <h4>we can add value to an array by push and unshift method.</h4>
+        <h4>Unshift method used to add a value in the 0 (zero) index of that array.</h4>
+        <h4>shift method used to delete that 0 index value</h4>
+        <h4>push method used to push a value at the end of an array</h4>
+        <h4>pop method used to delete a value from the eand of an array</h4>
+        <h3>Array index count start from 0 and if any value isn't exist in the array then javascript interpreter will return -1</h3>
+        <p id="demo"></p>
+    </div>
+</body>
+<script>
+    //there are two ways to declare array in javaScript.
+    var names = ['Apurba', 'Debnath', 'shuvra', 'deb','Rothosri'];// most commonly used way .
+    var year = new Array(1990, 1998, 1995, 1969);
+    // we can add value to the array later.
+    //year[0] = 'Dola';
+    // we can replace data to an array:
+    year[0] = 'Ami';
+    // we can add diifferce types of data to an array at any position.
+    year[8] =2023;
+    // push method to add data at the end.
+    year.push(20);
+    // unshift method to add data at the beginning.
+    year.unshift(1212);
+    // pop method to delete data from the end.
+    year.pop(); year.pop();year.pop();// last 3 element of that array will be deleted.
+    //document.write(names);
+    year[year.length] = 'last';// we can also add last value of an array like this.
+    year.shift();// to delete the 0 index's value.
+    for(var x = 0; x < year.length; x++){
+        //console.log(names[x]+" ");
+        //alert(names[x]);
+        
+        //document.getElementById('demo').innerHTML = names[x];//why it doesn't work?:
+        document.write(year[x]+'<br>');
+    }
+    document.writeln('Loop finished');
+    
+</script>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Click the button again and again to sort the array in random.</h2>
+
+    <button onclick="randomSort()">Suffle the points</button>
+  
+    <p id="demo"></p>
+</body>
+<script>
+    var points;
+    
+    points =[100, 400, 1, 30, 23, 24, 17, 2, 4, 5, 6];
+    document.getElementById("demo").innerHTML = points; 
+  
+    function randomSort(){
+        points.sort(function (a,b){return 0.5 - Math.random()});// inline function.
+        document.getElementById("demo").innerHTML = points;
+        
+    }
+    
+</script>
+</html>

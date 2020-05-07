@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>toString() method returns comma separated string.</h2>
+
+    <p id="demo"></p>
+    <br><br>
+    <button type="button" onclick="myFunction()" style="height: 50px; width:100px; background-color:brown; color:burlywood; font-size: 17px;">Try it</button>
+    <button type="button" onclick="deleteOne()" style="height: 50px; width:100px; background-color:rgb(51, 3, 3); color:burlywood; font-size: 17px;">Delete one</button>
+</body>
+<script>
+    /*
+    toString()-> convert all array elements to string with separation using (,) comma.
+    join()-> also convert all elements to string but with a specific separation .
+    push(),pop(), shift(), unshift(),
+    splice(location, howMuchwillDelete, arrayElements,arrayElements);
+    concat()-> add two existing array and return a new array.
+    (multiple array can be added with one array as concat 
+    method takes any number of array arguments.)
+    (can also take String as a argument.)
+    slice()-> return a new array as part of an array form defining index.
+    (pura array take given index no theke vag kore fele ar ekta notun array retun kore.)
+    sort()-> use to sorting an array items.
+    reverse()-> to reverse array items, 1st sort() then reverse();
+    number sorting a compare function ticks use korte hbe;
+    */
+    var fruits = ["mango", "apple", "30", "40","rotho", "puja"];
+    //document.getElementById('demo').innerHTML = fruits.toString();
+    //document.getElementById('demo').innerHTML = fruits.join("_");
+    //document.getElementById('demo').innerHTML = fruits.join("+");
+    document.getElementById("demo").innerHTML="<h3>Existing Array: <br>"+fruits+"</h3>";
+    function myFunction(){
+    fruits.splice(2,2,"Sd","pp");
+    document.getElementById('demo').innerHTML ="<h3>New array: <br>" + fruits+"</h3>";
+    }
+    function deleteOne(){
+        fruits.splice(0,1);
+        document.getElementById("demo").innerHTML = fruits;
+    }
+    
+</script>
+</html>

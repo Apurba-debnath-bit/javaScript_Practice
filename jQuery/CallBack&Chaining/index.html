@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Effect in jquery:</title>
+</head>
+<body>
+    <h2>Effects in jquery</h2>
+    <p>This is a paragraph outside div</p>
+    <button type="button" id="btnToggle">Toggle</button>
+    <button type="button" id="btn2">Click me1</button>
+    <button type="button" id="btn3">Click me 3</button>
+
+  
+
+    <div id="firstDiv" class="myDiv">
+        <lable>First div</lable>
+
+        <p>This is a paragraph of first div.</p>
+        <p>This is a paragraph of first div.</p>
+        
+       
+    </div>
+    <div id="secondDiv" class="myDiv">
+        <lable>Second div</lable>
+        <p>This is a paragraph of second div.</p>
+        <p>This is a paragraph of second div.</p>
+       
+    </div>
+
+  
+    
+</body>
+<script src="../js/jquery.js"></script>
+<script>
+    $(document).ready(function(){
+        function printMsg(){
+            alert('Effect done');
+        }
+        //Let see what is callback
+        $('#btnToggle').click(function(){
+
+            /*$("#firstDiv").slideToggle(6000, function(){
+
+                alert("Division is toggling");// this is callback function
+            });*/
+
+            //$("#firstDiv").slideToggle(5000,printMsg);
+            //we can do it in one single line: 
+            /*$('#firstDiv').slideUp();
+            $('#firstDiv').slideDown(2000,printMsg);*/
+
+            $('#firstDiv').slideUp(2000).slideDown(2000,printMsg).fadeOut(3000).fadeIn(3000,printMsg);
+        });
+    });
+</script>
+</html>

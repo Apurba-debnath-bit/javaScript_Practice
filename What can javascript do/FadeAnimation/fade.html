@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .fade{
+            height: 70px;
+            width: 300px;;
+            background-color: rgb(17, 3, 31);
+            color:cornsilk;
+            font-size:18px;
+            font-weight: bold;
+            font-family:cursive;
+        }
+    </style>
+    <script>
+        var opacity = 0;
+        var intervalID = 0;
+
+        function hide()
+        {
+           var img = document.getElementById('img1');
+           //to fetch the opacity:
+           opacity = Number(window.getComputedStyle(img).getPropertyValue("opacity")) ;// convert string to number
+           if(opacity>0){
+            opacity = opacity-0.1;
+            img.style.opacity = opacity;
+
+           }else{
+               clearInterval(intervalID);
+           }
+        }
+        function show(){
+            var img = document.getElementById('img1');
+           //to fetch the opacity:
+           opacity = Number(window.getComputedStyle(img).getPropertyValue("opacity")) ;// convert string to number
+           if(opacity< 1){
+            opacity = opacity+0.1;
+            img.style.opacity = opacity;
+            console.log(opacity);
+
+           }else{
+               clearInterval(intervalID);
+           }
+        }
+        function fadeIn(){
+            intervalID = setInterval(show,200);
+        }
+        function fadeOut(){
+            intervalID = setInterval(hide,200);
+        }
+    </script>
+</head>
+
+<body>
+    <button class="fade" onclick="fadeIn()">Fade In</button>
+    <img src="../mouse_event/img1/lol.jpg" id="img1" style="opacity:1;">
+    <button class="fade" onclick="fadeOut()">Fade Out</button>
+</body>
+</html>

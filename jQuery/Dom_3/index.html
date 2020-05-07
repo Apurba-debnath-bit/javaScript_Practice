@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>DOM manipulation in Jquery:</title>
+</head>
+<!--
+    addClass()    - Add one or more classes to the selected elements.
+    prepend()   - Inserts content at the beginning of the selected elements.
+    after()     - Insert content after the selected elements.
+    before()    - Insert content after the selected elements.
+    //remove(), empty(), after(), before(), append(), prepend().
+-->
+<body>
+    <h3>Jquery DOM manipulation part3</h2>
+   
+
+    <button type="button" id="btn1">Add Class</button>
+    <button type="button" id="btn2">Remove Class</button>
+    <button type="button" id="btn3">Toggle Class</button>
+    <button type="button" id="btn4">Css</button>
+    
+   
+    <div id="div1" class="myDiv">
+        <lable>First div</lable>
+        <p id="p1" class="asdf" >This is a <b>paragraph</b> of first div.</p>
+        <p id="p2" class="asdf" >This is a <b>paragraph</b> of first div.</p>   
+    </div>
+
+    <div id="div2" >
+        <lable>First div</lable>
+        <p id="p1" class="asdf" >This is a <b>paragraph</b> of first div.</p>
+        <p id="p2" class="asdf" >This is a <b>paragraph</b> of first div.</p>   
+    </div>
+  
+
+  
+    
+</body>
+<script src="../js/jquery.js"></script>
+<script>
+    $(document).ready(function(){
+        $("#btn1").click(function(){
+            $('#div1').addClass("newdivclass newparaclass");
+        });
+
+        $('#btn2').click(function(){
+            $('#div1').removeClass("newdivclass newparaclass");
+        });
+        $('#btn3').click(function(){
+            $('#div1').toggleClass("newdivclass newparaclass");
+        });
+        $('#btn4').click(function(){
+            $('#div1').css('font-size','20px');
+        });
+
+      
+    });
+</script>
+</html>

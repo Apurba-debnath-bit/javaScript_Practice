@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Practice</title>
+    <script>
+        /*
+        setTimeout();->   execute statements once after an interval
+        clearTimeout();-> this methos clear timer set with the setTimeout() method.
+        setInterval();->  Allows you to execute satements repeatedly after an interval.
+        clearInterval();-> methods clears timer set with the setInterval method;
+        */
+       var ID = 0;
+       var seceond = 0;
+       function print(){
+           
+            //document.getElementById('text1').innerHTML = '5 sec has passed ';
+            document.getElementById('text1').innerHTML = seceond+' seceond passed';
+            seceond++;
+       }
+       function start(){
+        //window is a object
+        //seTimeout comes form window object
+        //setTimeout method return an unique  setTimer
+        //ID = window.setTimeout(print,5000);//(function-reference, 5000ms)// return an timerID
+        ID = window.setInterval(print,1000);
+        
+       }
+       function stop(){
+           window.clearInterval(ID);//clearTimeout method aspect one argument that is timerID
+       }
+       
+    </script>
+</head>
+<body>
+   <button type="button" onclick="start()">Start</button><br>
+   <h2 id="text1">Some text</h2>
+   <button type="button" onclick="stop()">Stop</button>
+</body>
+</html>

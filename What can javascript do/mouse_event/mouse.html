@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>javaScript Practice: </title>
+
+			<script type="text/javascript">
+				/*onmouseover onmouseout-> mouse over and mouse out event*/
+				function mouseOver(){
+					 document.getElementById('img_1').src="img1/krishna.jpg";
+					
+				}
+				function mouseOut(){
+					document.getElementById('img_1').src="img1/lol.jpg";
+					
+				}
+				
+			</script>
+			<style type="text/css">
+				#container{
+					height: 500px;
+					width: 700px;
+					background-color: gray;
+					margin: 0 auto;
+
+				}
+				#img_1{
+					padding: 10px;
+					margin-left:130px;
+					margin-top: 20px;
+					width: 400px;
+				}
+			</style>
+	</head>
+	<body>
+		<div id="container">
+
+		<img src="img1/lol.jpg" onmouseover="mouseOver()" onmouseout="mouseOut()" id="img_1" >
+		</div>
+		
+
+		<br>
+		
+		
+	</body>
+</html>

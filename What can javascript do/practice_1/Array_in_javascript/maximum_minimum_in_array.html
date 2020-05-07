@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<h2>Finding maximum numbaer from an array:</h2>
+<button type="button" onclick="maxNum">Max.</button>
+<button type="button" onclick="minNum">Min.</button>
+<!--
+    max number will be index[0] and minimum number will be index[array.length-1]
+-->
+  <p id="demo"></p>
+</body>
+<script>
+    var points;
+    points = [123, 100, 12, 13, 2, 4, 67, 8, 1];
+    document.getElementById("demo").innerHTML = maxnum(points);
+    
+    
+    /*
+    this is one way of finding the heighest value.
+    function maxnum(arr){
+        return Math.max.apply(null, arr);
+    }*/
+    
+</script>
+
+</html>

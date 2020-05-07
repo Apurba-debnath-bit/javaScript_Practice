@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript array sorting.</title>
+</head>
+<body>
+    <h2>Object array sorting in javascript:</h2>
+    <button type="button" onclick="myFunction()">Sort Array</button>
+    <p id="demo"></p>
+</body>
+<script>
+    var human = [
+        {name:"Apurba", address:"Kolabagan/dhanmondi", profession:"Teacher", age:56, phnNo:889900},
+        {name:"Shuvra", address:"dhanmondi-6", profession:"Nurse", age:2, phnNo:8866900},
+        {name:"Rupa", address:"dhanmondi-8", profession:"Doctor", age:29, phnNo:88569900},
+    ];
+    displayData();
+    function myFunction(){
+        human.sort(function(a,b){return a.age - b.age});
+        displayData();
+    }
+    function displayData(){
+        document.getElementById("demo").innerHTML = 
+        human[0].name + " " + human[0].address + " "+human[0].profession +" "+human[0].phnNo+" "+human[0].age+"<br>"+
+        human[1].name + " " + human[1].address + " "+human[1].profession +" "+human[1].phnNo+" "+human[1].age+"<br>"+
+        human[2].name + " " + human[2].address + " "+human[2].profession +" "+human[2].phnNo+" "+human[2].age+"<br>";
+    }
+</script>
+</html>

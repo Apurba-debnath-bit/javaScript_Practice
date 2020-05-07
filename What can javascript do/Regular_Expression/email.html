@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>javaScript practice</title>
+	<script type="text/javascript">
+		function emailValidate()
+		{
+			
+
+			
+			var userEmail = document.getElementById('email').value;
+			//var regx = /a.b/;// here . means a special character for middle char could be anything.
+			//hypen doesn't work properly.
+			var regx = /^([a-z A-Z 0-9 \. - _]+)@([a-z A-Z 0-9 -]+)\.([a-z]{2,20})(.[a-z]{2,10})?$/;//here i means insensitive; ? means optional;
+			//var regx = /^[5-9][0-9]0$/;
+			if(regx.test(userEmail)){
+				alert('Valid email address.');
+				
+			}else{
+				alert('Invalid email address.');
+				document.getElementById('lblemail').style.visibility 
+				="visible";
+			}
+
+		}
+	</script>
+</head>
+<body>
+	<form  action="">
+		<table>
+			<tr>
+
+				<td>
+					<input type="email" id="email"name="email" placeholder="Enter your email" >
+					<label id="lblemail" style="color:red; visibility: hidden;" >
+						Invalid email
+					</label>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<!--Getting image from outside of the folder-->
+					<img src="../mouse_event/img1/krishna.jpg" height="400px" width="400px">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<button type="button" onclick="emailValidate()" id="btn1">Submit</button>
+				</td>
+			</tr>
+			
+
+		</table>
+	</form>
+</body>
+</html>

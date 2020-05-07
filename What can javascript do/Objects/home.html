@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>javaScript Practice:</title>
+	<script >
+		/*Object constructor in javaScript*/
+		function car(car_brand, car_model, car_price){
+
+			this.car_brand = car_brand;
+			this.car_model = car_model;
+			this.car_price = car_price;
+			this.car_speed = function(){
+
+				document.write("<h1>This is High speed car.</h1>");
+			}
+		}
+		 var c1 = new car("Moto", "Model2", 12300);
+		 var c2 = new car("Poto", "Model234", 145300);
+		 // accessing object:
+
+		 c1.car_speed();
+		 document.write("<h2>"+c1.car_brand+"</h2>");
+		 document.write("<h2>"+c1.car_model+"</h2>");
+		 document.write("<h2>"+c1.car_price+"</h2>");
+
+	</script>
+</head>
+<body>
+	<p>This is a paragraph.</p>
+
+</body>
+</html>

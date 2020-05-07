@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Javascrit practice </title>
+	
+</head>
+<body>
+	<form>
+	<input type="text" name="username" id="input1" placeholder="Enter your name"><br><br>
+
+	<button type="button" onclick="car.buttonClick()">Click me</button>
+	</form>
+</body>
+</html>
+
+<script>
+		var car = {
+
+			buttonClick:function (){
+			var s = document.getElementById('input1').value;
+			alert("your name is: " + s);
+		}
+	}
+</script>

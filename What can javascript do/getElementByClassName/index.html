@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>javaScript Practice: </title>
+			<script type="text/javascript">
+				function btnClick()
+				{
+					var tag = document.getElementsByTagName('p');
+					var element = document.getElementsByClassName("para");
+					//para[1].style.color = "red";
+					//para[2].style.fontWeight = "bold";
+					//para[3].style.fontStyle = "italic";
+				for(var i = 0; i < tag.length; i++){
+					
+					tag[i].style.color = "red";
+					
+					}
+				}
+				
+			</script>
+	</head>
+	<body>
+
+		<p class="para">This a paragraph</p>
+		<p class="para">This a paragraph</p>
+		<p class="para">This a paragraph</p>
+		<p class="para">This a paragraph</p>
+		<br>
+		<a href="#" class="para">This a Link</a>
+		
+
+		<br>
+		<button  onclick="btnClick()"> Change Style </button>
+		
+	</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var width = 100;
+        var difference = 2;
+        var intervalID = 0;
+        
+
+        function increase()
+        {
+            clearInterval(intervalID);
+            intervalID = setInterval(zoomIn,20);
+        }
+        function zoomIn()
+        {
+            //var img = document.getElementById('img_1');
+            document.getElementById('img_1').style.width = width;
+            if(width<200){
+                width = width + difference;
+               // img.style.width = width;
+                document.getElementById('img_1').style.width = width;
+                console.log(width);
+            }else{
+               clearInterval(intervalID);
+            }
+        }
+        //now decrease:
+       function decrease()
+        {
+            clearInterval(intervalID);
+            intervalID = setInterval(zoomOut,20);
+        }
+        function zoomOut()
+        {
+            var img = document.getElementById('img_1');
+            document.getElementById('img_1').style.width = width;
+            if(width > 100){
+                width = width-difference;
+                img.style.width = width;
+                //document.getElementById('img_1').style.width = width;
+                console.log(width);
+            }
+            else
+            {
+                clearInterval(intervalID);
+            }
+        }
+    </script>
+</head>
+<body>
+
+<img id="img_1" onmouseover="increase()" onmouseout="decrease()" src="../mouse_event/img1/krishna.jpg" width="100">
+    
+</body>
+</html>

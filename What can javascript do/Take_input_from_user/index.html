@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JavaScript Practice</title>
+	<script>
+		function radioClick(){
+			var x = document.getElementById('radio1').value;
+			var y = document.getElementById('radio2').value;
+			var z = document.getElementById('radio3').value;
+
+		if(radio1.checked == true){
+			alert('your selected gender is: '+ x);
+		}else if(radio2.checked == true){
+			alert('your selected gender is: '+ y);
+		}else if(radio3.checked == true){
+			alert('your selected gender is: '+ z);
+		}else{
+			alert("none selected yet!!");
+		}
+
+			
+		}
+	
+	</script>
+</head>
+<body>
+	<div id="container">
+	<form>
+		<table>
+			<tr>
+				<td>
+					<input type="radio" id="radio1" name="Gender" value="male">
+					<level for="male">Male</level></input>
+				</td>
+				<td>
+					<input type="radio" id="radio2" name="Gender" value="Female">
+					<level for="female">Female</level>
+				</td>
+				<td>
+					<input type="radio" id="radio3" name="Gender" value="Other">
+					<level for="other">Other</level>
+				</td>
+				<td>
+					<button onclick="radioClick()" id="btn1">
+						Click me
+					</button>
+				</td>
+			</tr>
+		</table>
+	</form>
+</div>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>javaScript practice</title>
+	<script type="text/javascript">
+		function validate()
+		{
+			var username = document.getElementById('username').value;
+
+				//regular expressions are treated as object in javaScript.
+				//we are checking regular expression -> /E00/ charset[abc]
+				//we can set a range of regular expession:
+				//form 0 to 100 [0-100], from a to z -> [a-z] to ignore cse used i after ->/regx/i
+				// to ignore a to z use ^ before : like->[^a-z]
+				//{34} number of time repeated - 
+				//before one backward slash 
+				/*
+					\d - match any digits(equal to [0-9]
+					\w - match any word character (a-z, A-Z, 0-9 & _)
+					\s - match any whitespace character (eg- space & tab);
+					\t - match any tab only.
+
+				^ -> start of the regular expression 
+				$ -> end of the regular expression.
+				*/
+				/*problem: 1st character has to be between 5-9| next charactar has to be between a-z| last charcter has to be 0*/
+
+			var regx = /^[7-9]\d{9}$/;//here i means insensitive;
+			//var regx = /^[5-9][0-9]0$/;
+			if(regx.test(username)){
+				alert('Valid user name.');
+				
+			}else{
+				alert('Invalid user name.');
+				document.getElementById('lbluser').style.visibility 
+				="visible";
+			}
+
+		}
+	</script>
+</head>
+<body>
+	<form  action="">
+		<table>
+			<tr>
+				<td>
+					<input type="text" id="username"name="username" placeholder="Enter your name" >
+					<label id="lbluser" style="color:red; visibility: hidden;" >
+						Invalid User Name
+					</label>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<button type="button" onclick="validate()" id="btn1">Submit</button>
+				</td>
+			</tr>
+			
+
+		</table>
+	</form>
+</body>
+</html>

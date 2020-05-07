@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript array</title>
+</head>
+<body>
+    <h2>javascript array</h2>
+    <h2>Arrays are special type of object.</h2>
+</body>
+<script>
+    // Different data declaration in array.
+    //Spaces and line breaks aren't important in array.
+    var names = [
+    'apurba', 
+    'shuvra', 
+    'apu'
+    ];
+    var i = names[2];
+    var z = names[0]
+    // adding value into array;
+    var d = names[3] = 'partho';
+    var k = names[6] = 234;
+    names.push(566);
+    names.push(766);
+    names.push(1000);
+    names.unshift('Mr.');
+    names.shift();// per shift e ekti value 1st position theke sore jabe.
+    names.shift();
+    names.pop();// last theke sorbe;
+    var s = names.sort();// to sorting array element.
+    var last_element = names[names.length -1];
+    document.write("value is: "+last_element+"<br>");
+
+    document.write('the last value is: ' + i + "<br>");
+    document.write('the last value is: ' + z + "<br>");
+    document.write('the last value is: ' + d + "<br>");
+    document.write('the last value is: ' + k + "<br>");
+    document.write('The Array is : ' + names + "<br>");
+
+    for(var kj = 0 ; kj < names.length; kj++){
+        document.write(names[kj] + "</br>");
+    }
+    
+</script>
+</html>

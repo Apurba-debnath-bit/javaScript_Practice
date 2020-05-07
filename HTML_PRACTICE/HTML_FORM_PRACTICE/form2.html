@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>form2</title>
+</head>
+<body>
+	<from action="/form_handller">
+		<label for="dateMax"> Enter a date before 1980-01-01</label>
+		<input type="date" name="dateMax" id="dateMax" max="1979-12-31"><br><br>
+		<label for="minDate">Enter a date After 2000-01-01</label>
+		<input type="date" name="minDate" id="minDate" min="2000-01-02"><br><br>
+
+		<label for="BdateTime">Select your birthday Date and Time:</label>
+		<input type="datetime-local" name="BdateTime" id="BdateTime"><br><br>
+
+		<label for="num1">Quantity (between 0 to 10):</label>
+		<input type="number" min="0" max="10" name="num1" id="num1"><br><br>
+		<!--name, id, for attribute value must be same-->
+		<label for="num2">Quantity(between 0 to 100): </label>
+		<input type="number" name="num2" id="num2" max="100" min="0" value="30" step="10">
+		<label for="vol1">Volume1:</label>
+		<input type="range" min="0" max="100" step="20" value="37" name="vol1" id="vol1">
+		<lable for="gsearch">Google Search</lable>
+		<input type="search" name="gsearch" id="gsearch"><br>
+		<label for="TelePhone">Phone No.</label>
+		<input type="tele" pattern="[0-9]{3}-[0-9]{4}-[0-9]{3}" placeholder="123-345-456" name="TelePhone" id="TelePhone">
+		<small>Format: 123-324-546</small><br>
+		<label for="fileSelection">Select a file you like!</label>
+		<label for="perweek">Select a week:</label>
+		<input type="week" name="perweek" id="perweek"><br><br>
+		<input type="file" name="file1" id="file1" ><br><br>
+		<input type="submit" value="submit">&nbsp; &nbsp; &nbsp;
+		<input type="button" onclick="alert('Love is you')" value="click here" name="btnone2" id="btnone2"  >
+
+		
+	</from>
+</body>
+</html>

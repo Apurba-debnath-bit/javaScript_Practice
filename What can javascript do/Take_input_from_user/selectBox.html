@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>javaScript practice</title>
+	<script type="text/javascript">
+		function fn()
+		{
+			var select = document.getElementById('selectBox');
+
+			alert(select.options[select.selectedIndex].value);
+		}
+	</script>
+</head>
+<body>
+	<form>
+		<select id="selectBox">
+			<option value="Apu">Apu</option>
+			<option value="Partho">Partho</option>
+			<option value="Rotho">Rotho</option>
+		</select>
+		<button onclick="fn()" >Click me</button>
+	</form>
+
+</body>
+</html>

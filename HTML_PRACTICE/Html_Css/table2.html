@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>rowspan practice</title>
+	<style>
+		table,td,th{
+			
+			border:1px solid black;
+			padding: 15px;
+
+		}
+		table{
+			width:100%;
+			padding: 12px;
+			border-spacing: 12px;
+		}
+		table#t01{
+			width: 100%;
+			background: #f1f1c1;
+		}
+		table#t01 tr:nth-child(even){
+			
+			background: #eee;
+		}
+		table#t01 tr:nth-child(odd){
+			
+			background: #fff;
+		}
+		caption{
+			font-size: 20px;
+		}
+	</style>
+</head>
+<body>
+	<table>
+		<caption>Rowspan Practice</caption>
+		<tr>
+			<th>Name:</th>
+			<td>Apurba debnath</td>
+			<td>Sagor</td>
+		</tr>
+
+		<tr>
+			<th rowspan="5">Telephone</th>
+			<td>01749417608</td>
+			<td>S-017659700</td>
+		</tr>
+
+		<tr>
+			<td>017494176</td>
+			<td>S-017659700</td>
+
+		</tr>
+		<tr>
+			<td>0174941790</td>
+			<td>S-017659700</td>
+		</tr>
+		<tr>
+			<td>017494176</td>
+			<td>S-017659700</td>
+			
+		</tr>
+		<tr>
+			<td>0174941790</td>
+			<td>S-017659700</td>
+		</tr>
+
+	</table>
+	<br>
+
+	<table id="t01">
+		<h2><caption>Rowspan Practice-2</caption></h2>
+		<tr>
+			<th>Name:</th>
+			<td>Apurba debnath</td>
+			<td>Sagor</td>
+		</tr>
+
+		<tr>
+			<th rowspan="5">Telephone</th>
+			<td>01749417608</td>
+			<td>S-017659700</td>
+		</tr>
+
+		<tr>
+			<td>017494176</td>
+			<td>S-017659700</td>
+
+		</tr>
+		<tr>
+			<td>0174941790</td>
+			<td>S-017659700</td>
+		</tr>
+		<tr>
+			<td>017494176</td>
+			<td>S-017659700</td>
+			
+		</tr>
+		<tr>
+			<td>0174941790</td>
+			<td>S-017659700</td>
+		</tr>
+
+	</table>
+
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>What can javascript do?</title>
+		<style>
+			#container-1{
+				height:300px;
+				width:400px;
+				float:left;
+				background-color:#DC143C;
+				border:2px dotted black;
+				margin:10px;
+				margin-left:60px;
+				color:white;
+				text-align:center;
+			
+			}
+			#container-2{
+				height:300px;
+				width:400px;
+				background-color:darkBlue;
+				border:2px dotted black;
+				float:left;
+				margin:10px;
+				color:white;
+				text-align:center;
+			
+		
+		</style>
+	</head>
+	<body>
+		<div id="container-1">
+			
+			<h1>Javascript can hide Html element </h1>
+			<p id="para1" style="font-family:cursive; font-size:18px">This is the paragraph, I want to hide</p>
+			<button type="button" onclick="document.getElementById('para1').style.display='none'">Click to hide</button>
+			<button type="button" onclick="document.getElementById('para1').style.display='block'">Click to hide</button>
+		
+		</div>
+		
+		<div id="container-2">
+			<h1>Javascript can show hidden Html element</h1>
+			<p id="para-2" style="display:none; font-family:arial; font-size:34px">The hidden paragraph<p>
+		
+			<button type="button" onclick="document.getElementById('para-2').style.display='none'">Click to Hide!</button>
+			<button type="button" onclick="document.getElementById('para-2').style.display='block'">Click to show!</button>
+		</div>
+		<!--css display property has two value none and block
+			display:none; to hide one HTML element;
+			display:block; to show that hidden html element;
+		-->
+		
+	
+	</body>
+
+
+
+
+
+</html>

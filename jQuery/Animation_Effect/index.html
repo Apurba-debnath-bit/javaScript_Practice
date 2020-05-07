@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Effect in jquery:</title>
+</head>
+<body>
+    <h2>Effects in jquery</h2>
+    <p>This is a paragraph outside div</p>
+    <button type="button" id="btn1">Animate</button>
+    <button type="button" id="btn2">Click me1</button>
+    <button type="button" id="btn3">Click me 3</button>
+
+  
+
+    <div id="firstDiv" class="myDiv">
+        <lable>First div</lable>
+
+        <p>This is a paragraph of first div.</p>
+        <p>This is a paragraph of first div.</p>
+        
+       
+    </div>
+    <div id="secondDiv" class="myDiv">
+        <lable>Second div</lable>
+        <p>This is a paragraph of second div.</p>
+        <p>This is a paragraph of second div.</p>
+       
+    </div>
+   <!-- <div id="thirdDiv" class="myDiv">
+        <lable>Third div</lable>
+        <p>This is a paragraph of third div.</p>
+        <p>This is a paragraph of third div.</p>
+       
+        <ul>
+            <li>List items 1</li>
+            <li>List items 2</li>
+            <li>List items 3</li>
+          
+        </ul>
+    </div>-->
+  
+    <div id="cube" class="myCube">
+        <p>cube</p>
+    </div>
+    
+</body>
+<script src="../js/jquery.js"></script>
+<script>
+    $(document).ready(function(){
+        $("#btn1").click(function(){
+            //alert("hi");
+            $('#cube').animate({
+                left:'150px', 
+                opacity:'1', 
+                width:'100px', 
+                height:'100px'
+
+            },3000)
+        });
+    });
+</script>
+</html>

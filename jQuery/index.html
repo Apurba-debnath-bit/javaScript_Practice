@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="container">
+        <p>This is a paragraph</p>
+        <p>This is a paragraph</p>
+        <p>This is a paragraph</p>
+        <p>This is a paragraph</p>
+    </div>
+        <button type="button" id="btn1">Click me 1</button>
+        <button type="button" id="btn2">Click me 2</button>
+</body>
+    <script src="js/jquery.js"></script>
+    <script>
+        $(document).ready(function(){
+            //$('#btn1').dblclick(fnc1);
+            //$('#btn2').click(fnc2);
+            $('#btn1').mouseenter(fnc1);
+            $('#btn1').mouseleave(fnc2);
+            
+            $('#btn2').hover(fnc1,fnc2);
+
+            function fnc1(){
+                $("p").fadeOut();
+            }
+            function fnc2(){
+                $("p").fadeIn();
+            }
+
+        });
+    </script>
+</html>

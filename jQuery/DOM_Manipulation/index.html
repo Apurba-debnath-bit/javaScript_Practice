@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>DOM manipulation in Jquery:</title>
+</head>
+<!--
+    text(), html(), attr(), css()// these are inbuild jQuery methods.
+-->
+<body>
+    <h2>Jquery DOM manipulation</h2>
+   
+
+    <button type="button" id="btn1">Set Value</button>
+    <button type="button" id="btn2">Get Value</button>
+   
+    <div id="div1" class="myDiv">
+        <lable>First div</lable>
+        <p id="p1" class="asdf" >This is a <b>paragraph</b> of first div.</p>   
+    </div>
+  
+
+  
+    
+</body>
+<script src="../js/jquery.js"></script>
+<script>
+    $(document).ready(function(){
+        $("#btn1").click(function(){
+            //var txe = $('#p1').text();//acting as a getter method.
+            //->>>> $('#p1').text("hello world");//passing arguments acting as a setter method.
+            //alert($('#p1').text());
+            //alert(txt);
+        //html() method will return all <> html tags within it.
+          // var txt = $('#p1').html();
+           //alert(txt);
+        //Now if we wanna pass some text by html method then:
+        //$('#p1').html('Love is everywhere <b>you have to</b> <i>Catch</i>it');
+           //Use of attr() method:  
+
+        /*var a = $('#div1').attr("class");
+            alert(a);
+            alert($("#p1").attr("src"))*/
+        //to access or to know css property .css() method has used.
+            //alert($("#div1").css('border'));
+           // $("#p1").attr('class','p2Class');
+           //$('#p1').css('font-family','cursive');
+           //$("#p1").css("font-size", "24px");
+        });
+        $('#btn2').click(function(){
+            //alert($('#p1').attr('class'));
+            //alert($("#p1").attr('class'));
+            //alert($('#p1').css('font-family'));
+            //alert($('#p1').css('font-size'));
+        });
+    });
+</script>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sort Method in javascript</title>
+</head>
+<body>
+    <h2>sort method sort an array in javascript.</h2>
+    <button type="button" onclick="actionfunction()">Action</button>
+    <p id="demo">Display here....<p>
+</body>
+<script>
+    var arr1 = ["Kola", "dud", "dai", "ghi", 0.123, 89.67, 34.56,"Ert",false];
+    var arr2 = ["coco", "bobo", "dodo", "aso", "foo", "ghii"];// age capital letter and then small letter.
+    var arr3 = ["100", "200", 3, 100, 23, 10, 4, 5, 6, 9, 40, 1]
+    function actionfunction(){
+    arr3.sort(function (a, b){
+        return a-b;
+    });
+    //arr2.reverse();
+    document.getElementById('demo').innerHTML= arr3;
+    }
+    /*function comp(a, b){
+        return b-a;
+    }*/
+</script>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>javaScript switch practice</h2>
+</body>
+<script>
+    var age = prompt('Enter your age:');
+    var name = prompt('Enter your name:');
+    switch(true){
+        case age <= 13:
+            document.write(name + " is a boy.");
+            break;
+        case age >= 13  && age <= 20 :
+            document.write(name + ' is a teenager');
+            break;
+        case age >= 20 && age <=30 :
+            document.write(name + " is a young man");
+            break;
+        case age >= 30 && age <= 45 : 
+            document.write(name + ' is so young');
+            break;
+        default:
+            document.write(name + ' is an old man');
+    }
+</script>
+
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>concat() method creates a new array by marging existing array.</h2>
+
+    <p id="demo">Display here</p>
+    <br><br>
+    <button type="button" onclick="displayNow()" style="height: 50px; width:100px; background-color:brown; color:burlywood; font-size: 17px;">concat</button>
+    <!--<button type="button" onclick="displayArray()" style="height: 50px; width:100px; background-color:rgb(51, 3, 3); color:burlywood; font-size: 17px;">Display array</button>-->
+</body>
+<script>
+    /*
+    toString()-> convert all array elements to string with separation using (,) comma.
+    join()-> also convert all elements to string but with a specific separation .
+    push(),pop(), shift(), unshift(),
+    splice(location, howMuchwillDelete, arrayElements,arrayElements);
+    concat()-> add two existing array and return a new array.
+    (multiple array can be added with one array as concat 
+    method takes any number of array arguments.)
+    (can also take String as a argument.)
+    Next->>slice()-> return a new array as part of an array form defining index.
+    (pura array take given index no theke vag kore fele ar ekta notun array retun kore.)
+    sort()-> use to sorting an array items.
+    reverse()-> to reverse array items, 1st sort() then reverse();
+    number sorting a compare function ticks use korte hbe;
+    */
+    var myGirl, myBoy, myChilds, myWife, myServent;
+    myGirl =["sapna", "puja","rotho"];
+    myBoy = ["Apu", "partho"];
+    myWife =["Shuvra", "puja"];
+    myServent = ["nitai", "piyush", "shahariar"];
+    myfamily = myGirl.concat(myBoy,myWife,myServent); //e hbe na;
+    
+
+    function displayNow(){
+        //myChilds = myGirl.concat(myBoy);
+        document.getElementById("demo").innerHTML = "<h4>After concating :<br>"+myfamily+"</h4>";
+    }
+
+    
+    
+</script>
+</html>
