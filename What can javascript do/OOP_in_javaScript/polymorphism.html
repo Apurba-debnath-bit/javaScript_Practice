@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Polymorphism in javascript.</title>
+</head>
+<body>
+    
+</body>
+<script>
+    class Employee{
+        constructor(name){
+            this.name = name;
+        }
+        eat(){
+            document.write(this.name + " eats regularly water.");
+        }
+    }
+    class Stuff extends Employee{
+
+        eat(){
+            super.eat();
+            document.write(this.name + " eats regularly fishes.");
+        }
+    }
+    let stuff1 = new Stuff("Ruma");
+    
+    stuff1.eat();
+</script>
+</html>

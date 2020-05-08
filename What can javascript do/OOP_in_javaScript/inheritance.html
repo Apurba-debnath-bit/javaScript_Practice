@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javaScript practice: OOP</title>
+</head>
+<body>
+    <p id="demo">Show here..</p>
+</body>
+<script>
+    class Car{
+        constructor(){
+
+        }
+        setname(name){
+            this.name = name;
+        }
+        startEngine(){
+            return document.write("Engine starting of "+ this.name+"<br>");
+        }
+        stopEngine(){
+            return document.write("Engine stopping of "+ this.name+"<br>");
+        }
+    }
+    class Volvo extends Car{
+        topSpeed(speed){
+            return document.write("The top speed for "+ this.name+ " is "+speed +"<br>");
+        }
+    }
+    // create an instance of Volvo class and extends it..
+    let myCar = new Volvo();
+    myCar.setname("Volvo_23vs");
+    myCar.topSpeed(60);
+    myCar.startEngine();
+    myCar.stopEngine();
+   
+   
+  
+    
+
+    
+
+    /*displayData();
+    function displayData(){
+    document.getElementById("demo").innerHTML =
+    myCar.setname("Volvo 23")+"  "+
+    myCar.startEngine()+"  "+
+    myCar.stopEngine()+"  "+
+    myCar.topSpeed(60);
+    }*/
+</script>
+</html>

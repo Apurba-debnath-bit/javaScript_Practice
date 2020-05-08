@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript class practice..</title>
+</head>
+<body>
+    <button type="button" onclick="displayData()" >Display</button>
+    <p id="demo">Show here..</p>
+</body>
+<script>
+    class Employee{
+        constructor(name, id, age, phnNo){
+            this.name = name;
+            this.id = id;
+            this.age = age;
+            this.phnNo = phnNo;
+
+        }
+        getName(){
+            return this.name;
+        }
+        getID(){
+            return this.id;
+        }
+        getAge(){
+            return this.age;
+        }
+        getPhnNo(){
+            return this.phnNo;
+        }
+
+    }
+    let Emp1 = new Employee("Apu", 123, 29, 08899); 
+    let Emp2 = new Employee("shuvra", "100_10", 25, 0888899); 
+    
+    function displayData(){
+    document.getElementById("demo").innerHTML = 
+    "1st Employee Name: "+ Emp1.getName() + "  1st Employee Age: "+ Emp1.getAge() + "  1st Employee ID: "+ Emp1.getID() +"<br>" +
+    "  2nd Employee Name: "+ Emp2.getName() + "  2nd Employee Age: "+ Emp2.getName() + "  2nd Employee ID: "+ Emp2.getID();
+    }
+</script>
+</html>
