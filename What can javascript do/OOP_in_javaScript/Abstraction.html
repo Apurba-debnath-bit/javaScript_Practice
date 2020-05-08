@@ -6,7 +6,9 @@
     <title>Javascript Abstraction: </title>
 </head>
 <body>
-    
+    <h2>javaScript Abstraction:</h2>
+    <button type="button" onclick="emp1.getDetails()">Try it</button>
+    <p id="demo">show here..</p>
 </body>
 <script>
     function Employee(name, age, baseSalary){
@@ -17,7 +19,7 @@
         //finalSalary = baseSalary + monthlySalary;
         let calculateFinalSalary = function(){
            let finalSalary = baseSalary + monthlyBonus;
-           console.log("The final salary: "+ finalSalary);
+           document.getElementById("demo").innerHTML = "The final salary: "+ finalSalary;
         }
         this.getDetails = function(){
             console.log("Name: "+ this.name + " | Age: "+ this.age );
@@ -25,7 +27,7 @@
         }
     }
     let emp1 = new Employee("Apu", 27, 2000);
-    emp1.getDetails();
+    //emp1.getDetails();
    
 </script>
 </html>
