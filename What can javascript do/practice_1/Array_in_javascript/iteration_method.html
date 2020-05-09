@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--<button type="button" onclick="callArray()">Try it.</button>-->
+    <h2>javascript Array.forEach()</h2>
+    <p id ="demo">Call a function one for each array element.</p>
+
+</body>
+<script>
+    var txt = " ";
+    var names = ["Apurba", "shuvra", "Puja", "Rothosri", "Sagor"];
+    names.forEach(callArray);
+
+    function callArray(value){
+       document.getElementById("demo").innerHTML= txt = txt + value +"<br>";
+    }
+</script>
+</html>
