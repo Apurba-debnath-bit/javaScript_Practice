@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"><p>
+</body>
+<script>
+    /*
+    Every method check one condition for each array items.
+    */
+   var number = [34, 19, 20, 33, 56, 89];
+   var allOver18 = number.every(myFunction);// will return a boolen value.
+   document.getElementById("demo").innerHTML = "All over 18 is: "+ allOver18;
+   function myFunction(value){
+    return value > 18;
+   }
+</script>
+</html>

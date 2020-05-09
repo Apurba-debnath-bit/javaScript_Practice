@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Same as indexOf method.But returns only last position of occurance.</h2>
+    <p id="demo"></p>
+</body>
+<script>
+    /*
+    does some as indexOf method.
+    Array.lastIndexOf() -> returns the position of the last occurance from the array.
+    If the given item not found it will return -1;
+    */
+    var fruits = ["Apple", "Mango", "Banana", "Orange", "Apple"];
+    var positionArray = fruits.lastIndexOf("Apple");// returns last occurance's position;
+    document.getElementById("demo").innerHTML = "The position is: " + positionArray;
+</script>
+</html>

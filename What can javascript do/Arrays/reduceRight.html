@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>reduceRight() also add all items of an array and returns a single value</h2>
+    <br>
+    <h2>But, reduceRight() method work from-->> (Right to left.)</h2>
+    <p id="demo"></p>
+</body>
+<script>
+    /*
+    reduceRight() also add all items of an array and returns a single value.
+    reduce() method works from-->> (left to right) and reduceRight() method work from-->> (Right to left.)
+    */
+    var number1 = [45, 4, 5, 8, 16, 25];
+    var sum  = number1.reduceRight(myFunction, 0);
+    function myFunction(total, value, index, array){
+        return total + value;
+    }
+    document.getElementById("demo").innerHTML = "The sum is: "+ sum;
+</script>
+</html>

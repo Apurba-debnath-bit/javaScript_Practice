@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"><p>
+</body>
+<script>
+    /*
+    Some method check one condition for each array items.
+    some method check one value or text from the full array and also check each item.
+    if one item match with condition than the iteration will be terminated. 
+    and also retrun one boolean value true or false.
+    */
+   var number = [34, 19, 18, 19, 56, 89];
+   var equal18 = number.some(myFunction);// will return a boolen value.
+   document.getElementById("demo").innerHTML = "Check this is 18: "+ equal18;
+   function myFunction(value){
+    return value >= 20;
+   }
+</script>
+</html>

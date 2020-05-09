@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>
+        Find method check the each array item for a given condition and 
+        return the value according to the condition.
+    </h2>
+    <p id="demo"></p>
+</body>
+<script>
+    /*
+    find()-> method finds the array item or value from an array. It checks from
+    right to left.
+    it always return the first array element..
+    */
+    var fruits = ["Apple", "Mango", "Banana", "Orange", "Apple"];
+    var findVlaue = fruits.find(myFunction);// returns the first array element;(checking left to right)
+    function myFunction(value){
+        return value == "Orange";
+    }
+    document.getElementById("demo").innerHTML = "The vale is: " + findVlaue;
+</script>
+</html>

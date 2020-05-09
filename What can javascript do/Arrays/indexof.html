@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+</body>
+<script>
+    /*
+    Array.indexof() -> returns the position of the first occurance from the array.
+    */
+    var fruits = ["Apple", "Mango", "Banana", "Orange"];
+    var positionArray = fruits.indexOf("a");// array.indexof() return -1 if the item isn't found;// 
+    //if the item is present more than one 
+    //than it returns the position of the first occurance;
+    document.getElementById("demo").innerHTML = "The position is: " + positionArray;
+</script>
+</html>
