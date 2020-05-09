@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2><pre>
+        1. map() method return a new array 
+        by performing a function on each array item.
+        2. map() method doesn't change the original array.
+        3. map() method doesn't execute the function without values.
+
+    </pre>
+    </h2>
+    <p id="demo"></p>
+</body>
+<script>
+    var num1 = [4, 2, 4, 3, 2, 9, 5];
+    var num2 = num1.map(func);
+    function func(val){
+        return val*3;
+    }
+    //document.getElementById("demo").innerHTML = "<h2> The existing array before map: "+num1+"</h2><br>";
+    document.getElementById("demo").innerHTML =  "<h2> The existing array before map: "+num1+"</h2><br>"+"<h2> The new array after map: "+num2+"</h2>";
+
+</script>
+</html>

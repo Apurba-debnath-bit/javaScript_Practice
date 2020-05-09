@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>
+        filter() method passes a test according to the 
+        given condition and will return a new array with array elements.
+    </h2>
+    <p id="demo"></p>
+    <script>
+        /*
+        filter()-> methods creates a new array with arrayElements that passes a test.
+        */
+        var number = [45, 40, 43, 41, 48, 47, 49];
+        var newArray = number.filter(myFunction);// 48, 47, 49
+        function myFunction(value){
+            return value > 45;// condition or test(this will pass)
+        }
+        document.getElementById("demo").innerHTML = "the new array is: " + newArray;
+
+    </script>
+</body>
+</html>

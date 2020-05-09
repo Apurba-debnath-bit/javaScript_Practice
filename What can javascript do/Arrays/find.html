@@ -15,14 +15,17 @@
 <script>
     /*
     find()-> method finds the array item or value from an array. It checks from
-    right to left.
+    left to right.
     it always return the first array element..
     */
-    var fruits = ["Apple", "Mango", "Banana", "Orange", "Apple"];
-    var findVlaue = fruits.find(myFunction);// returns the first array element;(checking left to right)
+    //var fruits = ["Apple", "Mango", "Banana", "Orange", "Apple"];
+    var number =[7, 8, 15, 19, 18];
+    var findVlaue = number.find(myFunction);
+    var findValuesIndex = number.findIndex(myFunction);
+    // returns the first array element;(checking left to right)
     function myFunction(value){
-        return value == "Orange";
+        return value >= 18;
     }
-    document.getElementById("demo").innerHTML = "The vale is: " + findVlaue;
+    document.getElementById("demo").innerHTML = "The vale is: " + findVlaue+" And the index is: " + findValuesIndex;
 </script>
 </html>
