@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    var ary = [
+        ["Name","Age", "Gender", "Degree"],
+        ["Harry", 18, "Male", "B.com"],
+        ["Apurba", 27, "Male", "B.com"],
+        ["Apu", 21, "Male", "B.sc"],
+        ["Shuvra", 25, "Female", "Bsc."]
+    ];
+    var a = "<table>";
+    for(var i = 0; i < 5; i++){
+       document.write("<tr>");
+        for(var j =0; j< 4; j++){
+            document.write("<td>" +ary[i][j] +" "+ "</td>");
+        }
+        document.write("</tr><br>");
+    }
+    a = a+ "</table>";
+</script>
+</html>
