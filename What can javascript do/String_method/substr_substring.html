@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    /*
+    
+    slice()--> this method used to slice the full string from one index or position, 
+    it will aspect one or two parameter at a time. 
+    (start index, upto what) 
+    substr() and substring () method work as like as slice() method..
+    */
+    var str = "jaVascript is a Great language";
+    var aftersubstr = str.substr(3);
+    var aftersubstr2 = str.substr(2,5);/*
+    here, 2, 5 means
+    0 index theke count suru hoye 2 no e jabe , 2 theke string k slice kore poroborti 5 ti char return korbe.
+    2 no theke por por 5 ta char return korbe;
+    */
+    var aftersubstring = str.substring(2);
+    var aftersubstring2 = str.substring(2,6);/*
+    here, 2, 6 means
+    0 theke index count suru, 2 o 6 index dekho k k ache,, 2 e V and 6 e r
+    tai 2 theke slice hoye 6 er ag porjonto mane upto 6 ja thakbe tai new string hisebe return korbe.
+    */
+
+    document.write("<h2>"+"After using substr method: "+"</h2> <br>");
+    document.write("<h2>"+aftersubstr+"</h2> <br>");
+    document.write("<h2>"+aftersubstr2+"</h2> <br><br><br>");
+
+    document.write("<h2>Using substring method:-------------------------------->>>>></h2> ");
+    document.write("<h2>"+aftersubstring+"</h2> <br><br><br>");// like as slice;
+    document.write("<h2>"+aftersubstring2+"</h2> <br><br><br>");
+
+
+    
+
+
+
+
+
+
+
+    document.write("<br><br><br><br>");
+    document.write("<h2>"+"After using slice method: "+"</h2> <br><br><br>");
+    var slicing = str.slice(3);
+    var afterSlice = str.slice(3, 13);// 3, 13 means -> (start, upto) index.no.
+    var beforeSlice = str.slice(-1);
+    var beforeSlice2 = str.slice(-2);
+    var beforeSlice3 = str.slice(-3);
+    /*
+    -1 means last index er por theke -1 count hbe mane last index e jeta ache ota.
+    -2 mane last 2 ta value;
+    -3 mane last 3 ta value;
+    esob sob slice method er jonno projojjo.
+    */
+     
+    
+    
+    document.write("<h2>"+slicing+"</h2> <br>");//it has sliced the string from index no 3 ..and return full part from index no.3
+    document.write("<h2>"+afterSlice+"</h2> <br>");
+    document.write("<h2>"+beforeSlice+"</h2> <br>");
+    document.write("<h2>"+beforeSlice2+"</h2> <br>");
+    document.write("<h2>"+beforeSlice3+"</h2> <br>");
+
+ 
+</script>
+</html>

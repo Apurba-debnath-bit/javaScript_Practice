@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    var str = "This is a place where i will be one as my kingdom."
+    document.write(str.length + "<br>");
+    document.write(str.toLowerCase()+ "<br>");
+    document.write(str.toUpperCase()+ "<br>");
+
+
+    document.write("It includes: "+str.includes("wheRe")+"<br>");// this is case sensitive.
+    document.write("Starts with: "+ str.startsWith("Th")+"<br>");// this is case sensitive.
+    document.write("Endss with: "+ str.endsWith("king.")+"<br>");// this is case sensitive.
+
+
+
+
+
+
+
+    /*
+    includes()---> method is case sensative.
+    includes() is used for searching a series of character or a single character in existing string.
+    it will return boolean value either true or false.
+    it just seraching a char or a series of char from the whole string.
+
+    -->> startsWith(), and endsWith() ->> these are also case sensitive method.
+    startsWith ->> checking a char or a series of char from the starting position of the existing string.
+    endsWith-->> checking a char or a series of char from the ending position of the existing string.
+    */
+
+    document.write("It is searching: " + str.search("s")+ "<br>");// this is case sensitive.
+    /*
+    search method--> return index of a particular char, 
+    if we give multiple char series and it's found only the first one then
+    it will count only the first one.
+    if doesn't find anything then it will return -1. (bcz index counting start from -1)
+    It is also case sensitive.
+    it will count from left to right.
+    */
+    /*
+    match()-> method aspect one regular expression as a perameter.
+    it will creat and return one new array according to the regular expression we provided.
+    */
+    var newArray = str.match(/is/g);// g means globally search in existing string.// will return a new array of it.
+    document.write("Matching using regular expression:.." + newArray +"<br>")
+
+    /*
+    indexOf()--> return the 1st index for a char or a series of char from existing string.
+    lastIndexOf()--> return the last index for a char or a series of char from existing string.
+    trim()--> remove spaces before and after a particular string.// basically used in form.
+    replace()--> replace function used to replace the series of char against a word or char series.
+    */
+   //var kaku = "  javascript  ";
+   // k = kaku.trim();
+   //alert(kaku.replace("fox", "dog"));
+   //document.write(kaku.replace("fox", "clever Brown fox"));
+   //alert(kaku);
+   //alert(k);
+</script>
+</html>

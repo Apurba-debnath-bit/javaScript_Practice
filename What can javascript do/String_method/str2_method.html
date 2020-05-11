@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    /*
+    concat(),--> used as concat (+) operator and it is used for concating multiple string.
+    split()--> this method used to split one full string for a special thing like space, any char etc.
+    also it will return an array after spliting that array.
+    repeat(),--> this method will used for repeating a string multiple times.
+    slice()--> this method used to slice the full string from one index or position, 
+    it will aspect one or two parameter at a time. 
+    (start index, upto what) 
+    */
+    var str = "javascript is a Great language";
+    var str1 = " hello";
+    var str2 = " world";
+    var str3 = " love you javascript";
+    var fullString = str.concat(str1,str2,str3);
+    var afterSplit = fullString.split(" ");
+    var afterRepeat = str.repeat(10);// 3 means how much time want to repeat that string.
+    var slicing = str.slice(3);
+    var afterSlice = str.slice(3, 13);// 3, 13 means -> (start, upto) index.no.
+    var beforeSlice = str.slice(-1);
+    var beforeSlice2 = str.slice(-2);
+    var beforeSlice3 = str.slice(-3);
+    /*
+    -1 means last index er por theke -1 count hbe mane last index e jeta ache ota.
+    -2 mane last 2 ta value;
+    -3 mane last 3 ta value;
+    esob sob slice method er jonno projojjo.
+    */
+     
+    document.write("<h2>"+fullString+"</h2> <br>");
+    document.write("<h2>"+afterSplit+"</h2> <br>");
+    document.write("<h2>"+afterRepeat+"</h2> <br>");
+    document.write("<h2>"+slicing+"</h2> <br>");//it has sliced the string from index no 3 ..and return full part from index no.3
+    document.write("<h2>"+afterSlice+"</h2> <br>");
+    document.write("<h2>"+beforeSlice+"</h2> <br>");
+    document.write("<h2>"+beforeSlice2+"</h2> <br>");
+    document.write("<h2>"+beforeSlice3+"</h2> <br>");
+
+ 
+</script>
+</html>
